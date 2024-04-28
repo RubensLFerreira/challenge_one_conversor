@@ -1,0 +1,13 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="apiKey" type="Application" factoryName="Application">
+    <envs>
+      <env name="API_KEY" value="d75c9e7c28d65120f30ac3f4" />
+      <env name="API_URL" value="https://v6.exchangerate-api.com/v6/" />
+    </envs>
+    <option name="MAIN_CLASS_NAME" value="Main" />
+    <module name="challenge_one_conversor" />
+    <method v="2">
+      <option name="Make" enabled="true" />
+    </method>
+  </configuration>
+</component>

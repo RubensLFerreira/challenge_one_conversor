@@ -67,8 +67,9 @@ public class Main {
   public static void requisicaoParaApi(ArrayList<String> lista) {
     Scanner prompt = new Scanner(System.in);
 
-    String endereco = "https://v6.exchangerate-api.com/v6/d75c9e7c28d65120f30ac3f4/pair/" +
-        lista.get(0) + "/" + lista.get(1) + "/" + lista.get(2);
+    String url = System.getenv("API_URL");
+    String key = System.getenv("API_KEY");
+    String endereco = url + key + "/pair/" + lista.get(0) + "/" + lista.get(1) + "/" + lista.get(2);
 
     try {
       HttpClient client = HttpClient.newHttpClient();
